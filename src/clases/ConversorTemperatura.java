@@ -11,13 +11,22 @@ public class ConversorTemperatura {
     public void conversorTemperatura () {
         Double valor;
 
-        String opcion = (JOptionPane.showInputDialog(null, "Selecciona una opción", "Convertir Temperatura",
-                JOptionPane.PLAIN_MESSAGE, null, opciones, "Seleccion" )).toString();
+        String opcion = (String) JOptionPane.showInputDialog(null, "Selecciona una opción", "Convertir Temperatura",
+                JOptionPane.PLAIN_MESSAGE, null, opciones, "Seleccion" );
+
+        if(opcion == null){
+            return;
+        }
 
         switch (opcion){
             case "Celcius a Fahrenheit":
                 try {
                     valor = Double.valueOf(JOptionPane.showInputDialog("Ingrese un valor"));
+
+                    if(valor == null){
+                        return;
+                    }
+
                     Double resultado = convertirTemperatura.celciusaFahrenheit(valor);
                     JOptionPane.showMessageDialog(null, "La temperatura en °F es " + String.format("%.2f", resultado));
                 } catch (NumberFormatException e) {
@@ -28,6 +37,11 @@ public class ConversorTemperatura {
             case "Fahrenheit a Celcuis":
                 try {
                     valor = Double.valueOf(JOptionPane.showInputDialog("Ingrese un valor"));
+
+                    if(valor == null){
+                        return;
+                    }
+
                     Double resultado = convertirTemperatura.FahrenheitaCelcius(valor);
                     JOptionPane.showMessageDialog(null, "La temperatura en °C es " + String.format("%.2f", resultado));
                 } catch (NumberFormatException e) {
