@@ -1,5 +1,5 @@
-import clases.ConversorTemperatura;
-import clases.ConvertirMonedas;
+import clases.monedas.ConvertirMonedas;
+import clases.temperatura.ConvertirTemperatura;
 
 import javax.swing.*;
 
@@ -9,8 +9,9 @@ public class Main {
     public static void main(String[] args) {
 
         Boolean ejecutar = true;
-        ConversorTemperatura conversorTemperatura = new ConversorTemperatura();
+
         ConvertirMonedas convertirMonedas = new ConvertirMonedas();
+        ConvertirTemperatura convertirTemperatura = new ConvertirTemperatura();
 
         while (ejecutar){
             String[] opciones = {"Conversor de Monedas", "Conversor de Temperatura"};
@@ -28,7 +29,7 @@ public class Main {
                     break;
 
                 case "Conversor de Temperatura":
-                    conversorTemperatura.conversorTemperatura();
+                    convertirTemperatura.convertirTemperatura();
                     break;
             }
 
