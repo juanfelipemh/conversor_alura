@@ -8,6 +8,7 @@ public class ConvertirTemperatura {
 
     private Celcius celcius = new Celcius();
     private Fahrenheit fahrenheit = new Fahrenheit();
+    private Kelvin kelvin = new Kelvin();
 
     public void convertirTemperatura(){
         String opcion = selecioneUnaOpcion();
@@ -33,7 +34,7 @@ public class ConvertirTemperatura {
     }
 
     private String selecioneUnaOpcion(){
-        String[] opciones = {"Celcius a Fahrenheit", "Fahrenheit a Celcuis"};
+        String[] opciones = {"Celsius a Fahrenheit", "Fahrenheit a Celsuis", "Celsius a Kelvin", "Kelvin a Celsius", "Fahrenheit a Kelvin", "Kelvin a Fahrenheit"};
 
         return (String) JOptionPane.showInputDialog(null, "Selecciona una opción", "Convertir Temperatura",
                 JOptionPane.PLAIN_MESSAGE, null, opciones, "Seleccion" );
@@ -54,6 +55,14 @@ public class ConvertirTemperatura {
                 return fahrenheit.convertir(temperatura);
             case "Fahrenheit a Celcuis":
                 return celcius.convertir(temperatura);
+            case "Celsius a Kelvin":
+                return celcius.convertirCelciusAKelvin(temperatura);
+            case "Kelvin a Celsius":
+                return kelvin.convertir(temperatura);
+            case "Fahrenheit a Kelvin":
+                return fahrenheit.convertirFahrenheitAKelvin(temperatura);
+            case "Kelvin a Fahrenheit":
+                return kelvin.convertirKelvinAFahrenheit(temperatura);
             default:
                 throw new ValorExcepcion("Opción inválida");
         }

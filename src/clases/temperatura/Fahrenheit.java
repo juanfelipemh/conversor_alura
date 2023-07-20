@@ -7,6 +7,10 @@ public class Fahrenheit implements ConversorTemperatura {
 
     @Override
     public Double convertir(Double temperatura) throws ValorExcepcion {
-        return (temperatura * 9/5) + 32;
+        return (temperatura * 5/9) + 32;
+    }
+
+    public Double convertirFahrenheitAKelvin(Double temperatura) throws ValorExcepcion {
+        return (temperatura - 32) * 5/9 + 273.15;
     }
 }

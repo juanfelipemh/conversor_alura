@@ -8,4 +8,8 @@ public class Celcius implements ConversorTemperatura {
     public Double convertir(Double temperatura) throws ValorExcepcion {
         return (temperatura - 32) * 5/9;
     }
+
+    public Double convertirCelciusAKelvin(Double temperatura) throws ValorExcepcion {
+        return temperatura + 273.15;
+    }
 }
