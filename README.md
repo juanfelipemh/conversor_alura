@@ -22,5 +22,5 @@ momento de usarla.
 
 # Evolución de la implementación a interfaz gráfica y ejecutable
 
-<video><iframe width="560" height="315" src="https://www.youtube.com/embed/m5wGgsVydKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></video>
+[![Alt text](https://www.youtube.com/watch?v=m5wGgsVydKo&t=5s)](https://www.youtube.com/watch?v=m5wGgsVydKo&t=5s)
 
