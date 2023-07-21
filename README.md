@@ -22,5 +22,5 @@ momento de usarla.
 
 # Evolución de la implementación a interfaz gráfica y ejecutable
 
-[![Alt text](https://www.youtube.com/watch?v=m5wGgsVydKo&t=5s)](https://www.youtube.com/watch?v=m5wGgsVydKo&t=5s)
+[![Alt text](yt.png)](https://www.youtube.com/watch?v=m5wGgsVydKo&t=5s)
 
